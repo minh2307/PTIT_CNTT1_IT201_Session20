@@ -21,10 +21,14 @@ Node* createNode(int data) {
 int main() {
     int n;
     Node* root = NULL;
+    root = createNode(2);
+    root->left = createNode(3);
+    root->right = createNode(4);
 
     printf("Nhap mot so nguyen bat ki: ");
     scanf("%d", &n);
 
-    root = createNode(n);
+    root->left->left = createNode(n);
 
+    return 0;
 }

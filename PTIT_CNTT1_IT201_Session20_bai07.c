@@ -123,7 +123,6 @@ Node* deleteNode(Node* root, int data) {
 }
 
 int main() {
-    // Khởi tạo cây
     Node* root = createNode(1);
     root->left = createNode(2);
     root->right = createNode(3);
